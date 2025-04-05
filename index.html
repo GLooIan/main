@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Coastal Ecosystem Protection and Awareness with 2D Mapping</h2>
+        <form action="logic.php" method="POST">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="input-field" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="input-field" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>
+<script>
+    // Prevent going back after logout
+    history.replaceState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+</script>

@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('images/coast.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(74, 133, 151);
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: auto;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+.dashboard-card {
+    background: white;
+    color: black;
+    width: 70%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+
+
+h1, h2 {
+    color: #222;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+
